@@ -29,9 +29,7 @@ namespace System
     {
         public readonly int Length;
 
-        public String()
-        {
-        }
+        public String(char c, int count) { }
     }
     public abstract class Array { }
     public abstract class Delegate { }
@@ -244,16 +242,17 @@ public static unsafe class Program
 
     //[System.Runtime.RuntimeExport("entry")]
     [UnmanagedCallersOnly(EntryPoint = "kernel_main", CallingConvention = CallingConvention.StdCall)]
-    static void  EfiMain()
+    static int EfiMain()
     {
         string hello = "Hello world!";
         fixed (char* c = hello)
         {
             
-            WriteString(c);
+            //WriteString(c);
         }
 
-        while (true) ;
+        //while (true) ;
+        return 42;
     }
 }
 

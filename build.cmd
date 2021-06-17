@@ -16,4 +16,4 @@ dotnet %CSC_PATH%/csc.dll /debug:embedded /noconfig /nostdlib /runtimemetadatave
 ::@set ILCPATH=C:\Users\dpete\.nuget\packages\runtime.linux-x64.microsoft.dotnet.ilcompiler\6.0.0-preview.6.21316.2\tools
 
 :: %ILCPATH%\ilc zerosharp.ilexe -o zerosharp.obj --nativelib --systemmodule zerosharp --map zerosharp.map -O --directpinvoke:kernel
-%ILCPATH%\ilc -o zerosharp.lib --systemmodule zerosharp --targetos linux --map zerosharp.map -O --directpinvoke:kernel zerosharp.ilexe
+%ILCPATH%\ilc -o zerosharp.lib --systemmodule zerosharp --nativelib --targetos linux --map zerosharp.map -O --directpinvoke:kernel zerosharp.ilexe
