@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Runtime;
 using System.Runtime.InteropServices;
 
@@ -23,8 +24,15 @@ namespace System
     public abstract class ValueType { }
     public abstract class Enum : ValueType { }
     public struct Nullable<T> where T : struct { }
-    
-    public sealed class String { public readonly int Length; }
+
+    public sealed class String
+    {
+        public readonly int Length;
+
+        public String()
+        {
+        }
+    }
     public abstract class Array { }
     public abstract class Delegate { }
     public abstract class MulticastDelegate : Delegate { }
@@ -47,6 +55,8 @@ namespace System
             public const string UnmanagedSignatureCallingConvention = nameof(UnmanagedSignatureCallingConvention);
         }
     }
+    
+    
 }
 
 namespace System.Runtime.InteropServices
@@ -99,6 +109,8 @@ namespace System.Runtime.InteropServices
     }
 }
 
+
+
 #region Things needed by ILC
 
 namespace System
@@ -109,19 +121,34 @@ namespace System
         {
             public RuntimeExportAttribute(string entry) { }
         }
-        
-        internal sealed class RuntimeImportAttribute : Attribute
-        {
-            public RuntimeImportAttribute(string entry) { }
-        }
     }
+    
+    
+    public static partial class AppContext
+    {
+        [RuntimeExport("OnFirstChanceException")]
+        internal static void OnFirstChanceException(object e)
+        {
+            
+        }
 
+        [RuntimeExport("OnUnhandledException")]
+        internal static void OnUnhandledException(object e)
+        {
+            
+        }
+        
+        public static void SetData(string key, string data){}
+    }
+    
+    
     class Array<T> : Array { }
     
     public class Exception
     {
     }
 }
+
 
 namespace Internal.Runtime.CompilerHelpers
 {
@@ -139,6 +166,13 @@ namespace Internal.Runtime.CompilerHelpers
         static void RphPinvoke() { }
         [System.Runtime.RuntimeExport("RhpPInvokeReturn")]
         static void RphPinvokeReturn() { }
+        
+        
+        [System.Runtime.RuntimeExport("RhpNewFast")]
+        static void RhpNewFast() { }
+        
+        [System.Runtime.RuntimeExport("RhpThrowEx")]
+        static void RhpThrowEx() { }
     }
 
     // ReSharper disable once InconsistentNaming
@@ -200,11 +234,12 @@ namespace Internal.Runtime.CompilerHelpers
 
 #endregion
 
+
 public static unsafe class Program
 {
     static void Main() { }
     
-    [DllImport("*","WriteString")]
+    [DllImport("kernel","WriteString")]
     public static extern void WriteString(char* format);
 
     //[System.Runtime.RuntimeExport("entry")]

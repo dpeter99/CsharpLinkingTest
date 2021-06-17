@@ -4,9 +4,7 @@
         <OutputType>Library</OutputType>
         
         <TargetFramework>net5.0</TargetFramework>
-        <LangVersion>9.0</LangVersion>
-        <EnableDefaultItems>false</EnableDefaultItems>
-        <Platforms>x64</Platforms>
+        
         
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         
@@ -16,29 +14,28 @@
         <RuntimeMetadataVersion>v4.0.30319</RuntimeMetadataVersion>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
-        <Optimize>true</Optimize>
 
-        <IlcGenerateStackTraceData>false</IlcGenerateStackTraceData>
+        <!--<IlcGenerateStackTraceData>false</IlcGenerateStackTraceData>
         <IlcInvariantGlobalization>true</IlcInvariantGlobalization>
         <IlcFoldIdenticalMethodBodies>true</IlcFoldIdenticalMethodBodies>
         <IlcOptimizationPreference>Size</IlcOptimizationPreference>
         <IlcGenerateMapFile>true</IlcGenerateMapFile>
-        <IlcDisableReflection>true</IlcDisableReflection>
-        <!--<IncludePal>true</IncludePal>-->
+        <IlcDisableReflection>true</IlcDisableReflection>-->
 
-        <!--<IlcSystemModule>noruntime</IlcSystemModule>-->
         
         <IlcSystemModule>CsharpLinkingTest</IlcSystemModule>
-        <NativeLib>Shared</NativeLib>
+
+        <NativeLib>Static</NativeLib>
     </PropertyGroup>
 
     <ItemGroup>
+        <DirectPInvoke Include="kernel" />
+    </ItemGroup>
+    
+    <ItemGroup>
       <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="6.0.0-preview.6.21316.2" />
     </ItemGroup>
-
-    <ItemGroup>
-        <Compile Include="src\**" />
-    </ItemGroup>
+    
 
     <Target Name="CustomizeReferences" BeforeTargets="BeforeCompile" AfterTargets="FindReferenceAssembliesForReferences">
         <ItemGroup>

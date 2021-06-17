@@ -35,21 +35,39 @@
   <Blob Name="__writableDataObject" Length="8" Hash="af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc" />
   <Blob Name="__writableDataString" Length="8" Hash="af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc" />
   <Blob Name="__writableDatazerosharp_System_Exception" Length="8" Hash="af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc" />
-  <ConstructedEEType Name="??_7Object@@6B@" Length="36" Hash="d677fbd2b1182e54b4fea8c46f76dffd1b8331ae4945566ccee538912688909c" />
-  <ConstructedEEType Name="??_7String@@6B@" Length="32" Hash="b002b0430e4e552893ee0c686a4c15af6a1060b5a9e7d13c0be0ca18661e4d8d" />
-  <ConstructedEEType Name="??_7zerosharp_System_Exception@@6B@" Length="36" Hash="0dc523cc4a54e442d52b36a4f107708fd274e057b048531aff34c7fda2e7861f" />
-  <MethodCode Name="zerosharp_Program__WriteString" Length="22" Hash="5b6f0ec3ea1c216febf1477237c6e73fadd99f7a30c00f9f25e0409d0483919f" />
-  <GCInfo Name="zerosharp_Program__WriteString" Length="3" Hash="1c0fb67846600d5ad7ea9712de12e5aebb88d4102ab6afb05d4feb79960d31aa" />
-  <MethodCode Name="zerosharp_Program__EfiMain" Length="80" Hash="6f51ab69fa667ef8206ebcfc2abb4b90f11c820d8c09a6aa29506de46e126b84" />
-  <GCInfo Name="zerosharp_Program__EfiMain" Length="14" Hash="1e4ab5ef4e5943bde74a0dd04f91a0602a177c9ac35fd31a6b10d4927db4cff9" />
-  <MethodCode Name="zerosharp_Internal_Runtime_CompilerHelpers_ThrowHelpers__ThrowInvalidProgramExceptionWithArgument" Length="25" Hash="ff3f14b6e73ae68fd999221f2c36deec31c15a826bff6d9fc60399e6086f44f2" />
-  <GCInfo Name="zerosharp_Internal_Runtime_CompilerHelpers_ThrowHelpers__ThrowInvalidProgramExceptionWithArgument" Length="4" Hash="048e84e34b3c4518bf918b3b766191bffe70020f9ae2492bb8dd8ff5a05d60c2" />
+  <ConstructedEEType Name="_ZTV6Object" Length="36" Hash="d677fbd2b1182e54b4fea8c46f76dffd1b8331ae4945566ccee538912688909c" />
+  <ConstructedEEType Name="_ZTV6String" Length="32" Hash="b002b0430e4e552893ee0c686a4c15af6a1060b5a9e7d13c0be0ca18661e4d8d" />
+  <ConstructedEEType Name="_ZTV26zerosharp_System_Exception" Length="36" Hash="0dc523cc4a54e442d52b36a4f107708fd274e057b048531aff34c7fda2e7861f" />
+  <MethodCode Name="zerosharp_Program__WriteString" Length="19" Hash="3edc6d871424e17f816fec2e3e36ca2e8963d207827791f156e9777907dc8d3b" />
+  <GCInfo Name="zerosharp_Program__WriteString" Length="3" Hash="f73d4f31684692069b56b13f45c2b78ec8a1ac57be8e31e4c4503187c6fa9797" />
+  <MethodCode Name="zerosharp_Program__EfiMain" Length="83" Hash="eb3e514d65a01de542959f9415bfbb378085306c80e8c7972f73e3c139232c83" />
+  <GCInfo Name="zerosharp_Program__EfiMain" Length="15" Hash="c8844b3542481c3064d9a8f7f13385e09b5a7d2ca3fce6661c71e3b8d5ced3ad" />
+  <MethodCode Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__RhpReversePInvoke2" Length="1" Hash="ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e" />
+  <GCInfo Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__RhpReversePInvoke2" Length="3" Hash="b3e5e46cae04efa2320a4a5febe7ab238c01d08d2a5127685ed9d92e359a5517" />
+  <MethodCode Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__RhpReversePInvokeReturn2" Length="1" Hash="ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e" />
+  <GCInfo Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__RhpReversePInvokeReturn2" Length="3" Hash="b3e5e46cae04efa2320a4a5febe7ab238c01d08d2a5127685ed9d92e359a5517" />
+  <MethodCode Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__FailFast" Length="6" Hash="9eb1aecd07fa03e5515c4c76743263e91f1f9923ae7d2ac930bb0bc67b9213ff" />
+  <GCInfo Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__FailFast" Length="7" Hash="f0a080d6fdc7be8d72d620d620b5c08e1c597013bbe164dda480ad86f4d1b2c1" />
+  <MethodCode Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__RphPinvoke" Length="1" Hash="ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e" />
+  <GCInfo Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__RphPinvoke" Length="3" Hash="b3e5e46cae04efa2320a4a5febe7ab238c01d08d2a5127685ed9d92e359a5517" />
+  <MethodCode Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__RphPinvokeReturn" Length="1" Hash="ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e" />
+  <GCInfo Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__RphPinvokeReturn" Length="3" Hash="b3e5e46cae04efa2320a4a5febe7ab238c01d08d2a5127685ed9d92e359a5517" />
+  <MethodCode Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__RhpNewFast" Length="1" Hash="ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e" />
+  <GCInfo Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__RhpNewFast" Length="3" Hash="b3e5e46cae04efa2320a4a5febe7ab238c01d08d2a5127685ed9d92e359a5517" />
+  <MethodCode Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__RhpThrowEx" Length="1" Hash="ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e" />
+  <GCInfo Name="zerosharp_Internal_Runtime_CompilerHelpers_StartupCodeHelpers__RhpThrowEx" Length="3" Hash="b3e5e46cae04efa2320a4a5febe7ab238c01d08d2a5127685ed9d92e359a5517" />
+  <MethodCode Name="zerosharp_Internal_Runtime_CompilerHelpers_ThrowHelpers__ThrowInvalidProgramExceptionWithArgument" Length="22" Hash="fad7af287e73f42fcb0fd5d8f1cfbe2e262dcf0837deeabffd2c4835a49bc547" />
+  <GCInfo Name="zerosharp_Internal_Runtime_CompilerHelpers_ThrowHelpers__ThrowInvalidProgramExceptionWithArgument" Length="4" Hash="27a6a4b44a7b3e22bd92ade9b33a60048a578d03d29d9b7436de9293d94f55e2" />
   <MethodCode Name="Object___ctor" Length="1" Hash="ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e" />
   <GCInfo Name="Object___ctor" Length="3" Hash="b3e5e46cae04efa2320a4a5febe7ab238c01d08d2a5127685ed9d92e359a5517" />
+  <MethodCode Name="zerosharp_System_AppContext__OnFirstChanceException" Length="1" Hash="ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e" />
+  <GCInfo Name="zerosharp_System_AppContext__OnFirstChanceException" Length="3" Hash="b3e5e46cae04efa2320a4a5febe7ab238c01d08d2a5127685ed9d92e359a5517" />
+  <MethodCode Name="zerosharp_System_AppContext__OnUnhandledException" Length="1" Hash="ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e" />
+  <GCInfo Name="zerosharp_System_AppContext__OnUnhandledException" Length="3" Hash="b3e5e46cae04efa2320a4a5febe7ab238c01d08d2a5127685ed9d92e359a5517" />
   <MethodCode Name="zerosharp_System_Exception___ctor" Length="1" Hash="ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e" />
   <GCInfo Name="zerosharp_System_Exception___ctor" Length="3" Hash="b3e5e46cae04efa2320a4a5febe7ab238c01d08d2a5127685ed9d92e359a5517" />
-  <MethodCode Name="zerosharp__Module___StartupCodeMain" Length="47" Hash="e3e1425697457b01bdf96b8c45f24e303d23c33af7928efe5b4a9e547174f387" />
-  <GCInfo Name="zerosharp__Module___StartupCodeMain" Length="7" Hash="d0f44bb8f6e156d494f4e5db0b5358a14593f1484da9472b4c15d551e873c7db" />
-  <EETypeOptionalFields Name="__optionalfields_??_7Object@@6B@" Length="3" Hash="f25a8e3833a4b53e61754ff8e3e27eeecf119cd277278f539675e01545e1777a" />
-  <EETypeOptionalFields Name="__optionalfields_??_7zerosharp_System_Exception@@6B@" Length="3" Hash="f25a8e3833a4b53e61754ff8e3e27eeecf119cd277278f539675e01545e1777a" />
+  <MethodCode Name="zerosharp__Module___StartupCodeMain" Length="44" Hash="407a9c7f19f5b5f8e86fa8920bb5be7ae03a0a4cc63fe2005d406d7a1ffce53a" />
+  <GCInfo Name="zerosharp__Module___StartupCodeMain" Length="7" Hash="2220d8ec964fba5497b2d367b08724caac5bbac6370644f3262fb2205e44b3a1" />
+  <EETypeOptionalFields Name="__optionalfields__ZTV6Object" Length="3" Hash="f25a8e3833a4b53e61754ff8e3e27eeecf119cd277278f539675e01545e1777a" />
+  <EETypeOptionalFields Name="__optionalfields__ZTV26zerosharp_System_Exception" Length="3" Hash="f25a8e3833a4b53e61754ff8e3e27eeecf119cd277278f539675e01545e1777a" />
 </ObjectNodes>
