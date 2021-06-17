@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ObjectNodes>
+  <ArrayOfFrozenObjects Length="144" Hash="6fd272ac3065c6ce8b4b84c6ef6e91eab2fbefd207f605f1b94f11339e1dc97a" />
+  <Metadata Name="__embedded_metadata" Length="5" Hash="68fd6d7ec550d663ae9ed85c1c32b205d469fc28e327daa61d0c0cf187de7656" />
+  <ResourceData Name="__embedded_resourcedata" Length="0" Hash="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" />
+  <ResourceIndex Name="__embedded_resourceindex" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <TypeMetadataMap Name="__type_to_metadata_map" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <ClassConstructorContextMap Name="__type_to_cctorContext_map" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <ReflectionInvokeMap Name="__method_to_entrypoint_map" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <DelegateMarshallingStubMap Name="__delegate_marshalling_stub_map" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <StructMarshallingStubMap Name="__struct_marshalling_stub_map" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <ArrayMap Name="__array_type_map" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <ReflectionFieldMap Name="__field_to_offset_map" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <NativeLayoutInfo Name="__nativelayoutinfo" Length="0" Hash="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" />
+  <ExactMethodInstantiations Name="__exact_method_instantiations" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <GenericTypesHashtable Name="__generic_types_hashtable" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <GenericMethodsHashtable Name="__generic_methods_hashtable" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <GenericVirtualMethodTable Name="__gvm_table" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <InterfaceGenericVirtualMethodTable Name="__interface_gvm_table" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <GenericMethodsTemplateMap Name="__GenericMethodsTemplateMap" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <GenericTypesTemplateMap Name="__GenericTypesTemplateMap" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <BlockReflectionTypeMap Name="__block_reflection_type_map" Length="12" Hash="a3b0eee6c143b8c0ea401bd47b8040fcc3baa002f935422ba0da6a7d27d3ec37" />
+  <StaticsInfoHashtable Name="_StaticsInfoHashtableNode" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <ReflectionVirtualInvokeMap Name="__VirtualInvokeMap" Length="3" Hash="65fde13cf1e4ea4206c293082657037684ee456e40041c816509b63e1b89d387" />
+  <DefaultConstructorMap Name="__DefaultConstructor_Map" Length="15" Hash="4124e2190dacdfa683a26e2a86df0242bc47891830714b03d669b146225cddb5" />
+  <ExternalReferencesTable Name="__external_CommonFixupsTable_references" Length="24" Hash="9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0" />
+  <ExternalReferencesTable Name="__external_NativeReferences_references" Length="0" Hash="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" />
+  <ExternalReferencesTable Name="__external_NativeStatics_references" Length="0" Hash="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" />
+  <StackTraceMethodMapping Name="_stacktrace_methodRVA_to_token_mapping" Length="0" Hash="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" />
+  <TypeManagerIndirection Name="__typemanager_indirection" Length="16" Hash="374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb" />
+  <ModulesSection Name="__Module" Length="8" Hash="af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc" />
+  <ReadyToRunHeader Name="__ReadyToRunHeader" Length="688" Hash="785cba9c0c132bc4d6f69ee69f9798ab6ffbea902abe0a79582f87b23a6fb1f7" />
+  <Blob Name="__readonlydata_g_compilerEmbeddedSettingsBlob" Length="4" Hash="df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119" />
+  <Blob Name="__readonlydata_g_requiredCpuFeatures" Length="4" Hash="df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119" />
+  <Blob Name="__writableDataObject" Length="8" Hash="af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc" />
+  <Blob Name="__writableDataString" Length="8" Hash="af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc" />
+  <Blob Name="__writableDatazerosharp_System_Exception" Length="8" Hash="af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc" />
+  <ConstructedEEType Name="??_7Object@@6B@" Length="36" Hash="d677fbd2b1182e54b4fea8c46f76dffd1b8331ae4945566ccee538912688909c" />
+  <ConstructedEEType Name="??_7String@@6B@" Length="32" Hash="b002b0430e4e552893ee0c686a4c15af6a1060b5a9e7d13c0be0ca18661e4d8d" />
+  <ConstructedEEType Name="??_7zerosharp_System_Exception@@6B@" Length="36" Hash="0dc523cc4a54e442d52b36a4f107708fd274e057b048531aff34c7fda2e7861f" />
+  <MethodCode Name="zerosharp_Program__WriteString" Length="22" Hash="5b6f0ec3ea1c216febf1477237c6e73fadd99f7a30c00f9f25e0409d0483919f" />
+  <GCInfo Name="zerosharp_Program__WriteString" Length="3" Hash="1c0fb67846600d5ad7ea9712de12e5aebb88d4102ab6afb05d4feb79960d31aa" />
+  <MethodCode Name="zerosharp_Program__EfiMain" Length="80" Hash="6f51ab69fa667ef8206ebcfc2abb4b90f11c820d8c09a6aa29506de46e126b84" />
+  <GCInfo Name="zerosharp_Program__EfiMain" Length="14" Hash="1e4ab5ef4e5943bde74a0dd04f91a0602a177c9ac35fd31a6b10d4927db4cff9" />
+  <MethodCode Name="zerosharp_Internal_Runtime_CompilerHelpers_ThrowHelpers__ThrowInvalidProgramExceptionWithArgument" Length="25" Hash="ff3f14b6e73ae68fd999221f2c36deec31c15a826bff6d9fc60399e6086f44f2" />
+  <GCInfo Name="zerosharp_Internal_Runtime_CompilerHelpers_ThrowHelpers__ThrowInvalidProgramExceptionWithArgument" Length="4" Hash="048e84e34b3c4518bf918b3b766191bffe70020f9ae2492bb8dd8ff5a05d60c2" />
+  <MethodCode Name="Object___ctor" Length="1" Hash="ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e" />
+  <GCInfo Name="Object___ctor" Length="3" Hash="b3e5e46cae04efa2320a4a5febe7ab238c01d08d2a5127685ed9d92e359a5517" />
+  <MethodCode Name="zerosharp_System_Exception___ctor" Length="1" Hash="ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e" />
+  <GCInfo Name="zerosharp_System_Exception___ctor" Length="3" Hash="b3e5e46cae04efa2320a4a5febe7ab238c01d08d2a5127685ed9d92e359a5517" />
+  <MethodCode Name="zerosharp__Module___StartupCodeMain" Length="47" Hash="e3e1425697457b01bdf96b8c45f24e303d23c33af7928efe5b4a9e547174f387" />
+  <GCInfo Name="zerosharp__Module___StartupCodeMain" Length="7" Hash="d0f44bb8f6e156d494f4e5db0b5358a14593f1484da9472b4c15d551e873c7db" />
+  <EETypeOptionalFields Name="__optionalfields_??_7Object@@6B@" Length="3" Hash="f25a8e3833a4b53e61754ff8e3e27eeecf119cd277278f539675e01545e1777a" />
+  <EETypeOptionalFields Name="__optionalfields_??_7zerosharp_System_Exception@@6B@" Length="3" Hash="f25a8e3833a4b53e61754ff8e3e27eeecf119cd277278f539675e01545e1777a" />
+</ObjectNodes>

@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>9.0</LangVersion>
+        <EnableDefaultItems>false</EnableDefaultItems>
+        <Platforms>x64</Platforms>
+        
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        
+        <NoStdLib>true</NoStdLib>
+        <NoConfig>true</NoConfig>
+        
+        <RuntimeMetadataVersion>v4.0.30319</RuntimeMetadataVersion>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+        <Optimize>true</Optimize>
+
+        <IlcGenerateStackTraceData>false</IlcGenerateStackTraceData>
+        <IlcInvariantGlobalization>true</IlcInvariantGlobalization>
+        <IlcFoldIdenticalMethodBodies>true</IlcFoldIdenticalMethodBodies>
+        <IlcOptimizationPreference>Size</IlcOptimizationPreference>
+        <IlcGenerateMapFile>true</IlcGenerateMapFile>
+        <IlcDisableReflection>true</IlcDisableReflection>
+        <!--<IncludePal>true</IncludePal>-->
+
+        <!--<IlcSystemModule>noruntime</IlcSystemModule>-->
+        
+        <IlcSystemModule>CsharpLinkingTest</IlcSystemModule>
+        <NativeLib>Shared</NativeLib>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="6.0.0-preview.6.21316.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="src\**" />
+    </ItemGroup>
+
+    <Target Name="CustomizeReferences" BeforeTargets="BeforeCompile" AfterTargets="FindReferenceAssembliesForReferences">
+        <ItemGroup>
+            <ReferencePathWithRefAssemblies Remove="@(ReferencePathWithRefAssemblies)" />
+            <ReferencePath Remove="@(ReferencePath)" />
+        </ItemGroup>
+    </Target>
+    
+</Project>
