@@ -1,15 +1,24 @@
-<Project Sdk="ChromaSDK/0.0.0-alpha04">
+<Project Sdk="ChromaSDK/0.0.0-alpha06">
 
     <PropertyGroup>
         <OutputType>Library</OutputType>
         
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
 
         <Configurations>Debug;Release;CoreLib</Configurations>
+        
+        <OutputType>Exe</OutputType>
+        
+        <IlcSystemModule>System</IlcSystemModule>
     </PropertyGroup>
 
     <ItemGroup>
         <DirectPInvoke Include="kernel" />
     </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\System\System.csproj" />
+    </ItemGroup>
+    
     
 </Project>

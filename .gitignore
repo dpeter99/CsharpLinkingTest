@@ -6,3 +6,11 @@ CsharpLinkingTest/obj/
 CsharpLinkingTest/bin/
 
 .idea/
+
+ChromaSDK/bin/
+
+ChromaSDK/obj/
+
+.vs/
+
+System/bin/

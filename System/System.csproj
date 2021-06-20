@@ -1,4 +1,4 @@
-<Project Sdk="ChromaSDK/0.0.0-alpha05">
+<Project Sdk="ChromaSDK/0.0.0-alpha06">
 
     <PropertyGroup>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -8,6 +8,10 @@
 
     <ItemGroup>
       <Folder Include="Internal\Runtime\InteropServices" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <DirectPInvoke Include="kernel" />
     </ItemGroup>
     
 </Project>

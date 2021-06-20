@@ -1,20 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <PropertyGroup>
-        <DefaultLanguageSourceExtension>.cs</DefaultLanguageSourceExtension>
-        <Language>C#</Language>
+        <UseDefaultSDK>true</UseDefaultSDK>
+    </PropertyGroup>
+
+    <Import Condition="$(UseDefaultSDK) == 'true'" Project="Sdk.props" Sdk="Microsoft.NET.Sdk"/>
+
+
+    <Import Project="$(MSBuildThisFileDirectory)/IlcCompiler.props"/>
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+
         <LangVersion>latest</LangVersion>
+
+        <OutputType>Library</OutputType>
+
+        <DisableImplicitFrameworkDefines>true</DisableImplicitFrameworkDefines>
+        <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+
+        <DefaultLanguageSourceExtension>.cs</DefaultLanguageSourceExtension>
+    </PropertyGroup>
+
+
+    <PropertyGroup>
+        <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">bin\</BaseOutputPath>
+        <OutputPath>$(BaseOutputPath)\</OutputPath>
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Remove="**"/>
         <Compile Include="**/*$(DefaultLanguageSourceExtension)" />
-    </ItemGroup>
-
-
-    <ItemGroup>
-        <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="6.0.0-preview.6.21316.2" />
     </ItemGroup>
 
 </Project>

@@ -3,14 +3,14 @@
     <PropertyGroup>
         <OutputType>Library</OutputType>
         
-        <TargetFramework>net5</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <Description>Provides MSBuild traversal logic.</Description>
         <PackageTags>MSBuild MSBuildSdk traversal dirs</PackageTags>
         
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageType>MSBuildSdk</PackageType>
 
-        <Version>0.0.0-alpha05</Version>
+        <Version>0.0.0-alpha06</Version>
 
         <Configurations>Debug;Release;CoreLib</Configurations>
 

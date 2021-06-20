@@ -1,0 +1,24 @@
+﻿
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <Target Name="Build">
+        <Warning Text="Test"/>
+        <Csc
+                Sources="@(Compile)"
+                DebugType="embedded"
+                NoConfig="true"
+                NoStandardLib="true"
+                RuntimeMetadataVersion="v4.0.30319"
+                LangVersion="$(LanguageVersion)"
+                AllowUnsafeBlocks="true"
+                TargetType="Library"
+                OutputAssembly="$(OutputPath)/test.dll"
+        />
+        
+        <PropertyGroup>
+            <IlcCompileInput>$(OutputPath)/test.dll</IlcCompileInput>
+        </PropertyGroup>
+        
+    </Target>
+    
+</Project>

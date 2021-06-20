@@ -1,0 +1,31 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <BuildOS Condition="'$(BuildOS)' == ''">win</BuildOS>
+        <IlcHostArch Condition="'$(IlcHostArch)' == ''">x64</IlcHostArch>
+
+
+        <IlcHostPackageName>runtime.$(BuildOS)-$(IlcHostArch).Microsoft.DotNet.ILCompiler</IlcHostPackageName>
+
+        <ILCompilerVersion>6.0.0-preview.7.21317.1</ILCompilerVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+
+        <PackageReference Include="$(IlcHostPackageName)">
+            <Version>$(ILCompilerVersion)</Version>
+            <GeneratePathProperty>true</GeneratePathProperty>
+        </PackageReference>
+
+    </ItemGroup>
+
+    <PropertyGroup>
+        <IlcHostPackagePath Condition="'$(BuildOS)-$(IlcHostArch)' == 'win-x64'">$(Pkgruntime_win-x64_Microsoft_DotNet_ILCompiler)</IlcHostPackagePath>
+    </PropertyGroup>
+
+    <Target Name="DebugInfo" BeforeTargets="Build">
+
+        <Message Text="$(IlcHostPackagePath)"/>
+    </Target>
+
+</Project>
