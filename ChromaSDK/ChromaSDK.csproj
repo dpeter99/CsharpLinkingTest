@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.Build.NoTargets/3.0.4">
+    
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        
+        <TargetFramework>net5</TargetFramework>
+        <Description>Provides MSBuild traversal logic.</Description>
+        <PackageTags>MSBuild MSBuildSdk traversal dirs</PackageTags>
+        
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageType>MSBuildSdk</PackageType>
+
+        <Version>0.0.0-alpha05</Version>
+
+        <Configurations>Debug;Release;CoreLib</Configurations>
+
+        <Platforms>AnyCPU</Platforms>
+        
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <Content Include="SDK/**">
+            <PackagePath>\SDK\</PackagePath>
+        </Content>
+    </ItemGroup>
+    
+</Project>

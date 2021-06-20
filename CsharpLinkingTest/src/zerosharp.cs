@@ -156,18 +156,22 @@ namespace Internal.Runtime.CompilerHelpers
     {
         [RuntimeExport("RhpReversePInvoke2")]
         static void RhpReversePInvoke2() { }
+        
         [RuntimeExport("RhpReversePInvokeReturn2")]
         static void RhpReversePInvokeReturn2() { }
+        
         [System.Runtime.RuntimeExport("__fail_fast")]
         static void FailFast() { while (true) ; }
+        
         [System.Runtime.RuntimeExport("RhpPInvoke")]
         static void RphPinvoke() { }
+        
         [System.Runtime.RuntimeExport("RhpPInvokeReturn")]
         static void RphPinvokeReturn() { }
         
         
         [System.Runtime.RuntimeExport("RhpNewFast")]
-        static void RhpNewFast() { }
+        internal static extern unsafe object RhpNewFast(EEType* pEEType); 
         
         [System.Runtime.RuntimeExport("RhpThrowEx")]
         static void RhpThrowEx() { }
@@ -226,7 +230,24 @@ namespace Internal.Runtime.CompilerHelpers
             throw new Exception();
         }
     }
+    
+}
 
+namespace Internal.Runtime
+{
+
+    [StructLayout(LayoutKind.Sequential)]
+    internal unsafe partial struct EEType
+    {
+#if TARGET_64BIT
+        private const int POINTER_SIZE = 8;
+        private const int PADDING = 1; // _numComponents is padded by one Int32 to make the first element pointer-aligned
+#else
+        private const int POINTER_SIZE = 4;
+        private const int PADDING = 0;
+#endif
+        internal const int SZARRAY_BASE_SIZE = POINTER_SIZE + POINTER_SIZE + (1 + PADDING) * 4;
+    }
 
 }
 
@@ -241,14 +262,14 @@ public static unsafe class Program
     public static extern void WriteString(char* format);
 
     //[System.Runtime.RuntimeExport("entry")]
-    [UnmanagedCallersOnly(EntryPoint = "kernel_main", CallingConvention = CallingConvention.StdCall)]
+    [UnmanagedCallersOnly(EntryPoint = "sharp_entryPoint")]
     static int EfiMain()
     {
-        string hello = "Hello world!";
+        string hello = "Hello world! from csharp";
         fixed (char* c = hello)
         {
             
-            //WriteString(c);
+            WriteString(c);
         }
 
         //while (true) ;

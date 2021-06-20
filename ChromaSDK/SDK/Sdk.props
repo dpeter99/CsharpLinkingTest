@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <DefaultLanguageSourceExtension>.cs</DefaultLanguageSourceExtension>
+        <Language>C#</Language>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="**/*$(DefaultLanguageSourceExtension)" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="6.0.0-preview.6.21316.2" />
+    </ItemGroup>
+
+</Project>

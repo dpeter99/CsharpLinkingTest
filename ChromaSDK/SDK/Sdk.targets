@@ -1,0 +1,47 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <NativeIntermediateOutputPath Condition="'$(NativeIntermediateOutputPath)' == ''">$(IntermediateOutputPath)native\</NativeIntermediateOutputPath>
+    </PropertyGroup>
+    
+    <Target Name="Build">
+        <Warning Text="Test"/>
+        <Csc 
+                Sources="@(Compile)"
+                DebugType="embedded"
+                NoConfig="true"
+                NoStandardLib="true"
+                RuntimeMetadataVersion="v4.0.30319"
+                LangVersion="$(LanguageVersion)"
+                AllowUnsafeBlocks="true"
+                TargetType="Library"
+        />
+    </Target>
+
+    <Target Name="IlcCompile">
+
+        <ItemGroup>
+            <IlcArg Include="@(IlcCompileInput)" />
+            <IlcArg Include="-o:zerosharp.o" />
+            <IlcArg Condition="$(IlcSystemModule) != ''" Include="--systemmodule:$(IlcSystemModule)" />
+            <IlcArg Condition="$(NativeLib) != ''" Include="--nativelib" />
+            <IlcArg Include="--targetos linux" />
+
+            <IlcArg Condition="$(IlcGenerateMapFile) == 'true'" Include="--map:zerosharp.map.xml" />
+
+            <IlcArg Include="-O" />
+            
+            <IlcArg Include="@(DirectPInvoke->'--directpinvoke:%(Identity)')" />            
+            
+        </ItemGroup>
+
+        <MakeDir Directories="$(NativeIntermediateOutputPath)" />
+        <WriteLinesToFile File="$(NativeIntermediateOutputPath)%(ManagedBinary.Filename).ilc.rsp" Lines="@(IlcArg)" Overwrite="true" />
+        
+        <Exec Command="&quot;$(IlcHostPath)\tools\ilc&quot; @&quot;$(NativeIntermediateOutputPath)%(ManagedBinary.Filename).ilc.rsp&quot;" />
+        
+        
+    </Target>
+    
+    
+</Project>

@@ -1,29 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="ChromaSDK/0.0.0-alpha05">
 
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
-
-        <IlcGenerateStackTraceData>false</IlcGenerateStackTraceData>
-        <IlcInvariantGlobalization>true</IlcInvariantGlobalization>
-        <IlcFoldIdenticalMethodBodies>true</IlcFoldIdenticalMethodBodies>
-
-        <NoStdLib>true</NoStdLib>
-        <NoConfig>true</NoConfig>
-
-        <RuntimeMetadataVersion>v4.0.30319</RuntimeMetadataVersion>
-        <Optimize>true</Optimize>
-        <IlcOptimizationPreference>Size</IlcOptimizationPreference>
-        <IlcDisableReflection>true</IlcDisableReflection>
-        <IncludePal>true</IncludePal>
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-        <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
-        <IlcSystemModule>noruntime</IlcSystemModule>
-        
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Configurations>Debug;Release;CoreLib</Configurations>
+        <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="6.0.0-preview.6.21316.2" />
+      <Folder Include="Internal\Runtime\InteropServices" />
     </ItemGroup>
     
 </Project>
