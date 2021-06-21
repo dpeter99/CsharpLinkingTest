@@ -1,8 +1,9 @@
 ﻿
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <Target Name="Build">
-        <Warning Text="Test"/>
+    <Target Name="CsharpCompile" DependsOnTargets="$(CoreBuildDependsOn)">
+        <MakeDir Directories="$(OutputPath)" />
+
         <Csc
                 Sources="@(Compile)"
                 DebugType="embedded"
@@ -12,13 +13,14 @@
                 LangVersion="$(LanguageVersion)"
                 AllowUnsafeBlocks="true"
                 TargetType="Library"
-                OutputAssembly="$(OutputPath)/test.dll"
+                OutputAssembly="$(OutputPath)/$(TargetFileName)"
+                References="$(ReferenceAssembly)"
         />
-        
+
         <PropertyGroup>
-            <IlcCompileInput>$(OutputPath)/test.dll</IlcCompileInput>
+            <IlcCompileInput>$(OutputPath)/$(TargetFileName)</IlcCompileInput>
         </PropertyGroup>
-        
+
     </Target>
-    
+
 </Project>

@@ -7,9 +7,12 @@
 
         <Configurations>Debug;Release;CoreLib</Configurations>
         
-        <OutputType>Exe</OutputType>
+        <!--<OutputType>exe</OutputType>-->
+        <DoAOT>true</DoAOT>
         
-        <IlcSystemModule>System</IlcSystemModule>
+        <IlcSystemModule>test</IlcSystemModule>
+        
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 
     <ItemGroup>

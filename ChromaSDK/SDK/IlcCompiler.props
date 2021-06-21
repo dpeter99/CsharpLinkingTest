@@ -21,6 +21,7 @@
 
     <PropertyGroup>
         <IlcHostPackagePath Condition="'$(BuildOS)-$(IlcHostArch)' == 'win-x64'">$(Pkgruntime_win-x64_Microsoft_DotNet_ILCompiler)</IlcHostPackagePath>
+        <IlcHostPath>$(IlcHostPackagePath)</IlcHostPath>
     </PropertyGroup>
 
     <Target Name="DebugInfo" BeforeTargets="Build">

@@ -9,4 +9,6 @@ namespace System
     public class Delegate
     {
     }
+    
+    public abstract class MulticastDelegate : Delegate { }
 }

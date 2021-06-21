@@ -38,6 +38,7 @@
     <ItemGroup>
         <Compile Remove="**"/>
         <Compile Include="**/*$(DefaultLanguageSourceExtension)" />
+        <Compile Remove="obj/**"/>
     </ItemGroup>
 
 </Project>

@@ -1,40 +1,16 @@
 ﻿<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    
 
     <Import Condition="$(UseDefaultSDK) == 'true'" Project="Sdk.targets" Sdk="Microsoft.NET.Sdk"/>
 
     <Import Project="$(MSBuildThisFileDirectory)/Csharp.Build.targets"/>
     <Import Project="$(MSBuildThisFileDirectory)/IlcCompiler.targets"/>
-    
+
     <PropertyGroup>
         <NativeIntermediateOutputPath Condition="'$(NativeIntermediateOutputPath)' == ''">$(IntermediateOutputPath)native\</NativeIntermediateOutputPath>
     </PropertyGroup>
 
-    <Target Name="Build">
-        <Warning Text="Test"/>
-        <Csc
-                Sources="@(Compile)"
-                DebugType="embedded"
-                NoConfig="true"
-                NoStandardLib="true"
-                RuntimeMetadataVersion="v4.0.30319"
-                LangVersion="$(LanguageVersion)"
-                AllowUnsafeBlocks="true"
-                TargetType="Library"
-        />
-    </Target>
 
-
-
-
-    <!-- Import NuGet.targets (required for GetReferenceNearestTargetFrameworkTask and used for Restore functionality) -->
-    <PropertyGroup>
-        <MSBuildUseVisualStudioDirectoryLayout Condition="'$(MSBuildUseVisualStudioDirectoryLayout)'==''">$([MSBuild]::IsRunningFromVisualStudio())</MSBuildUseVisualStudioDirectoryLayout>
-        <NuGetRestoreTargets Condition="'$(NuGetRestoreTargets)'=='' and '$(MSBuildUseVisualStudioDirectoryLayout)'=='true'">$([MSBuild]::GetToolsDirectory32())\..\..\..\Common7\IDE\CommonExtensions\Microsoft\NuGet\NuGet.targets</NuGetRestoreTargets>
-        <NuGetRestoreTargets Condition="'$(NuGetRestoreTargets)'==''">$(MSBuildToolsPath)\NuGet.targets</NuGetRestoreTargets>
-    </PropertyGroup>
-
-    <Import Condition="'$(IsRestoreTargetsFileLoaded)' != 'true' and Exists('$(NuGetRestoreTargets)') and $(UseDefaultSDK) == 'false'" Project="$(NuGetRestoreTargets)" />
+    <Target Name="_SetTargetFrameworkMonikerAttribute" />
 
 </Project>
