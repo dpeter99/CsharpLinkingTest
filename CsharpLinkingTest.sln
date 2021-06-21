@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpLinkingTest", "CsharpLinkingTest\CsharpLinkingTest.csproj", "{51D4BB20-74B7-450F-83F7-5D24FDF83BAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System", "System\System.csproj", "{9DEBB900-9CF3-4A7D-B701-0ECC98D1D607}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreLib", "CoreLib\CoreLib.csproj", "{9DEBB900-9CF3-4A7D-B701-0ECC98D1D607}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChromaSDK", "ChromaSDK\ChromaSDK.csproj", "{D26F8340-A3F9-49A4-B3D6-47B4E776D73E}"
 EndProject

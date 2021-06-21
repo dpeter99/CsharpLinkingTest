@@ -2,18 +2,19 @@
 
     <PropertyGroup>
         <OutputType>Library</OutputType>
-        
+
         <TargetFramework>net6.0</TargetFramework>
 
         <Configurations>Debug;Release;CoreLib</Configurations>
         
-        <!--<OutputType>exe</OutputType>-->
-        <DoAOT>true</DoAOT>
-        
+        <DoAOT>false</DoAOT>
+
         <!--<IlcSystemModule>CsharpLinkingTest.dll</IlcSystemModule>-->
-        <IlcSystemModule>CoreLib</IlcSystemModule>
-        
+        <!--<IlcSystemModule>CoreLib</IlcSystemModule>-->
+
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+        <RootNamespace>System</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -21,8 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\CoreLib\CoreLib.csproj" />
+        <DirectPInvoke Include="kernel" />
     </ItemGroup>
-    
     
 </Project>

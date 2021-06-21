@@ -14,3 +14,7 @@ ChromaSDK/obj/
 .vs/
 
 System/bin/
+
+CoreLib/obj/
+
+CoreLib/bin/
