@@ -1,4 +1,7 @@
-﻿namespace System.Internal.Runtime.CompilerHelpers
+﻿using System;
+using System.Internal.Runtime.CompilerHelpers;
+
+namespace Internal.Runtime.CompilerHelpers
 {
     public static class ThrowHelpers
     {

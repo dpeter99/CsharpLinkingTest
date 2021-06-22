@@ -1,7 +1,12 @@
 ﻿namespace System.Runtime
 {
-    internal sealed class RuntimeExportAttribute : Attribute
+    public sealed class RuntimeExportAttribute : Attribute
     {
         public RuntimeExportAttribute(string entry) { }
+    }
+    
+    public sealed class RuntimeImportAttribute : Attribute
+    {
+        public RuntimeImportAttribute(string entry) { }
     }
 }

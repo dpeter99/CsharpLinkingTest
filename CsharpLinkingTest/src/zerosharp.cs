@@ -18,11 +18,11 @@ public static unsafe class Program
 {
     static void Main() { }
     
-    [DllImport("kernel","WriteString")]
+    [RuntimeImport("WriteString")]
     public static extern void WriteString(char* format);
 
-    //[System.Runtime.RuntimeExport("entry")]
-    [UnmanagedCallersOnly(EntryPoint = "sharp_entryPoint")]
+    [RuntimeExport("sharp_entryPoint")]
+    //[UnmanagedCallersOnly(EntryPoint = "sharp_entryPoint")]
     static int EfiMain()
     {
         string hello = "Hello world! from csharp";
