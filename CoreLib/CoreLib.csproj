@@ -1,4 +1,4 @@
-<Project Sdk="ChromaSDK/0.0.0-alpha07">
+<Project Sdk="ChromaSDK/0.0.0-alpha08">
 
     <PropertyGroup>
         <OutputType>Library</OutputType>

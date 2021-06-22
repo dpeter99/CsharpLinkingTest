@@ -3,7 +3,7 @@
 
     <Import Condition="$(UseDefaultSDK) == 'true'" Project="Sdk.targets" Sdk="Microsoft.NET.Sdk"/>
 
-    <Import Project="$(MSBuildThisFileDirectory)/Csharp.Build.targets"/>
+    <!--<Import Project="$(MSBuildThisFileDirectory)/Csharp.Build.targets"/>-->
     <Import Project="$(MSBuildThisFileDirectory)/IlcCompiler.targets"/>
 
     <PropertyGroup>

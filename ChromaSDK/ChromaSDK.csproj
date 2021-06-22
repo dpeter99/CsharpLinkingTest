@@ -10,7 +10,7 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageType>MSBuildSdk</PackageType>
 
-        <Version>0.0.0-alpha07</Version>
+        <Version>0.0.0-alpha08</Version>
 
         <Configurations>Debug;Release;CoreLib</Configurations>
 
