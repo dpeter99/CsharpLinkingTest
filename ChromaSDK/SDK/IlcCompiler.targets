@@ -4,7 +4,8 @@
 
     <ItemGroup>
       <IlcArg Include="$(TargetPath)" />
-      <IlcArg Include="@(ReferencePathWithRefAssemblies)" />
+      <IlcArg Include="@(ReferencePathWithRefAssemblies->'-r:%(OriginalPath)')" />
+
       <IlcArg Include="-o:$(OutputPath)/$(ProjectName).o" />
       <IlcArg Condition="$(IlcSystemModule) != ''" Include="--systemmodule:$(IlcSystemModule)" />
       <IlcArg Include="--nativelib" />
